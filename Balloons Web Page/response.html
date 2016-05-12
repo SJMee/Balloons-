@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Balloons</title>
+<link href="1style.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="favicon.ico">
+</head>
+
+<body>
+<ul id="navigation">
+	<li><a href="web_design_first_site_intro.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="pics.html">Pics</a></li>
+	
+	<li><a href="discussion.html">Discussion</a></li>
+	<li><a href="events.html">Events</a></li> 
+	<li><a href="news.html">News</a></li>
+	<li><a href="contact.html">Contact</a></li>
+	<li><a href="products.html">Products</a></li>
+</ul>
+<br>
+<br>
+<!-- Hidden iframe -->
+<iframe name="secret-frame" width="0" height="0" border="0" style="display: none;"></iframe>
+
+<!-- Script to redirect to a custom page -->
+<script>
+// replace "ss-submit" with the ID of your submit button
+document.getElementById("ss-submit").addEventListener("click", function(){
+  // adds a delay because the results page loads before the form has a chance to submit
+  setTimeout(function() {
+    // replace the url in quotes below to where you want to the user to be redirected to
+    window.location = "response.html";
+  }, 1000);
+});
+</script
+<p>Thanks for your opinion of my awesome site!</p>
+<footer>
+&copy; Sarah Jane Mee
+</footer>
+
+</body>
+
+</html>
